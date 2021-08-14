@@ -1,0 +1,11 @@
+@mixin font {
+  font-family: roboto;
+}
+
+@mixin alternativeColor {
+ color: $grey-color
+}
+
+@mixin greyLight {
+  color: #7e7e7e
+}

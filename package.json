@@ -1,12 +1,28 @@
 {
-  "name": "",
+  "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "3rd project for openclassroom courses",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
-  "prefix": "postcss ./public/css/style.css --user autoprefixer -d ./public/css/prefixed/"
+    "test": "testcommand",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --user autoprefixer -d ./public/css/prefixed/"
+    
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChriZoizo/ChristopherBoyer_3_13072021.git"
+  },
+  "keywords": [
+    "ohmyfood",
+    "openclassroom",
+    "project",
+    "p3"
+  ],
   "author": "Christopher Boyer",
   "license": "ISC",
-  "browserlist": "last 4 versions"
+  "bugs": {
+    "url": "https://github.com/ChriZoizo/ChristopherBoyer_3_13072021/issues"
+  },
+  "homepage": "https://github.com/ChriZoizo/ChristopherBoyer_3_13072021#readme"
+}

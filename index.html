@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
   <title>OhMyFood! - Accueil</title>
-  <link rel="icon" type="image/svg" href="public/images/logo/ohmyfood@2x.svg"> </head>
+  <link rel="icon" type="image/svg" href="public/images/logo/ohmyfood@2x.svg"> 
+
+</head>
 
 <body>
   <div class="body-container">
     <header class="header">
       <h1>
-        <img src="public/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood!" />
+ohmyfood
       </h1>
     </header>
 <main>
     <section class="location">
-      <form method="post" action="traitement.js" class="location">
+      <form method="post" action="traitement.js" class="location__form">
         <p>
           <label class="gpslogo"><i class="fas fa-map-marker-alt"></i>
           </label>
@@ -28,9 +30,9 @@
       </form>
     </section>
 
-    <section class="section-explore">
+    <section class="explore paddingAuto">
       <h1>Réservez le menu qui vous convient</h1>
-      <p class="hero__subtitle">
+      <p class="explore__subtitle">
         Découvrez des restaurants d'exception, séléctionnés pas nos soins.
       </p>
       <button class="explore-btn" type="button">
@@ -38,11 +40,29 @@
       </button>
     </section>
 
-    <section id="section-functioning">
+    <section class="section-functiuning">
       <h1>Fonctionnement</h1>
 
-      <div class="cards">
-        <div class="card">
+      <div class="steps">
+        <div class="steps__step">
+         <span class="steps__step__number"> 1 </span> <i class="fa-mobile-alt fas steps__step__icon"></i>
+         <span>Choisissez un restaurant</span>
+        </div>
+        <div class="steps__step">
+          <span class="steps__step__number"> 2 </span><i class="fa-list-ul fas steps__step__icon"></i>
+<span>Composez votre menu</span>
+        </div>
+        <div class="steps__step">
+          <span class="steps__step__number"> 3 </span><i class="fa-store fas steps__step__icon3"></i>
+<span>Degustez au restaurant</span>
+        </div>
+
+      </div>
+
+      </section>
+
+      <section class="cards">
+        <div class="cards__card">
           <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette Du Gout" class="card__img">
           <span class="card__badge">Nouveau</span>
           <div class="card__footer">
@@ -53,7 +73,7 @@
             <div class="card__btn"><i class="fa-2x fa-heart fas" aria-hidden="true"></i></div>
           </div>
         </div>
-        <div class="card">
+        <div class="cards__card">
           <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La Palette Du Gout" class="card__img">
           <span class="card__badge">Nouveau</span>
           <div class="card__footer">
@@ -64,7 +84,7 @@
             <div class="card__btn"><i class="fa-2x fa-heart fas" aria-hidden="true"></i></div>
           </div>
         </div>
-        <div class="card">
+        <div class="cards__card">
           <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La Palette Du Gout" class="card__img">
           <span class="card__badge">Nouveau</span>
           <div class="card__footer">
@@ -75,7 +95,7 @@
             <div class="card__btn"><i class="fa-2x fa-heart fas" aria-hidden="true"></i></div>
           </div>
         </div>
-        <div class="card">
+        <div class="cards__card">
           <img src="public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La Palette Du Gout" class="card__img">
           <span class="card__badge">Nouveau</span>
           <div class="card__footer">
@@ -86,7 +106,7 @@
             <div class="card__btn"><i class="fa-2x fa-heart fas" aria-hidden="true"></i></div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   </div>
 </main>
