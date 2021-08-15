@@ -1,9 +1,11 @@
 .explore {
-
-  background-color: #f6f6f6;
-  padding-top: 10px;
-  padding-bottom: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   text-align: center;
-  vertical-align: middle;
- height: 280px;
+
+ & h1 {
+   margin: 0px;
+ }
 }

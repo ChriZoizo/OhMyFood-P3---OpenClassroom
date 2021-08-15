@@ -2,10 +2,35 @@
   font-family: roboto;
 }
 
-@mixin alternativeColor {
+@mixin primary-colour {
+  color: $primary-color
+}
+@mixin secondary-colour {
+  color: $secondary-color
+}
+@mixin tertiary-colour {
+  color: $tertiary-color
+}
+
+@mixin alternative-colour {
  color: $grey-color
 }
 
-@mixin greyLight {
+@mixin grey-light-colour {
   color: #7e7e7e
+}
+
+@mixin flexCol-spacearound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@mixin flexCol-spacebetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin rounded {
+  border-radius: 40px;
 }

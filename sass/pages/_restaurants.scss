@@ -1,0 +1,54 @@
+.cards {
+
+    @include flexCol-spacebetween;
+    row-gap: 2rem;
+
+  &__card {
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+    }
+
+    &__badge {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: bolder;
+      font-family: roboto;
+      background-color: $tertiary-color;
+      position: absolute;
+      top: 14px;
+      right: 7px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.7rem
+    }
+
+
+    & h3 {
+      margin: 0
+    }
+
+    & p {
+      margin: 0.2rem 0;
+    }
+  }
+}
+
+.like {
+  margin: 0.5rem 0.5rem 0 0;
+ font-size: smaller;
+    color: white;
+    -webkit-text-stroke:1px rgb(0, 0, 0)
+
+}

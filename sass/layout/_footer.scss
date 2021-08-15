@@ -1,0 +1,33 @@
+.footer {
+  background-color: $grey-dark-color;
+  color: white;
+
+  &__logo {
+    font-family: shrikhand;
+    font-size: 1.5rem
+  }
+
+  & li {
+    list-style: none;
+  
+   
+  }
+
+  & ul {
+    padding: 0;
+   list-style-type: none;
+@include flexCol-spacearound;
+row-gap: 0.8rem 
+
+  }
+
+  & a { 
+    color: white;
+  text-decoration: none;
+  @include font
+  }
+}
+
+footer + .container {
+  margin-top: 0 !important
+}
