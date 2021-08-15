@@ -1,7 +1,7 @@
 .cards {
 
     @include flexCol-spacebetween;
-    row-gap: 2rem;
+
 
   &__card {
     position: relative;
@@ -10,6 +10,7 @@
     height: 250px;
     background-color: white;
     overflow: hidden;
+    margin-bottom: 1rem;
 
     & img {
       width: 100%;
