@@ -18,15 +18,18 @@
       object-fit: cover;
     }
 
+
     &__badge {
       padding: 0.5rem;
       font-size: 0.8rem;
       font-weight: bolder;
-      font-family: roboto;
+      font-family: roboto !important;
+      color: $tertiary-darker;
       background-color: $tertiary-color;
       position: absolute;
       top: 14px;
       right: 7px;
+
     }
 
     &__footer {
@@ -53,3 +56,4 @@
     -webkit-text-stroke:1px rgb(0, 0, 0)
 
 }
+

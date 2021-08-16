@@ -50,9 +50,8 @@
   @include flexCol-spacearound;
   background-color: white;
   border-radius: 10px;
-  min-height: 65px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 7px 15px;
 
   &__footer {
     display: flex;
@@ -83,5 +82,14 @@ width: 30%;
     left: calc(10% - 10%);
     bottom: -5px;
   }
+}
+}
+
+.order {
+text-align: center;
+margin: 35px;
+& button {
+  width: 150px;
+  font-family: roboto;
 }
 }

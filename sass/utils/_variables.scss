@@ -5,3 +5,5 @@ $tertiary-color: #99E2D0;
 $grey-dark-color: #353535;
 $grey-light-color: #f6f6f6;
 $grey-color: #7e7e7e;
+
+$tertiary-darker: darken($tertiary-color,30%);
