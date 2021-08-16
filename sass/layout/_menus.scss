@@ -1,76 +1,87 @@
-
-.main-menu { 
+.main-menu {
   background-color: $grey-light-color;
   position: relative;
-bottom:30px;
-border-radius: 30px 30px 0 0;
-& h1 {
-  font-family: shrikhand;
-  margin: 0
-}
+  bottom: 30px;
+  border-radius: 30px 30px 0 0;
+
+  & p {
+    margin: 0.3rem 0;
+  }
+
+  & h1 {
+    font-family: shrikhand;
+    margin: 0;
+  }
+
+  & h4 {
+    margin: 0.3rem 0;
+    font-weight: bolder;
+  }
 }
 
-h4 {
-  margin: 0.3rem 0;
-  font-weight: bolder;
-}
-p {
-  margin: 0.3rem 0;
-}
+
+
 
 .hero-image {
   height: 250px;
   width: 100%;
 
-& img {
-
-  object-fit: cover;
-
-}
+  & img {
+    object-fit: cover;
+  }
 }
 
 .menu {
 
-
-
-
-
-&__header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
+  @media screen and (min-width: 1024px) {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-}
-
 
 .submenu-item {
   @include flexCol-spacearound;
   background-color: white;
   border-radius: 10px;
-  height: 65px;
+  min-height: 65px;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 15px;
 
   &__footer {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+
+    &__price{
+      font-weight: bolder;
+    }
   }
 }
 
-.submenu__title {
+.submenu {
 
-  display:inline-block;
-  position:relative;
+  @media screen and (min-width: 1024px) {
+width: 30%;
+  }
 
- &::after{
-  content:'';
-  height:2px;
-  width:40px;
-  background:$tertiary-color;
-  position:absolute;
-  left:calc(10% - 10%);
-  bottom:-5px;
+&__title {
+  display: inline-block;
+  position: relative;
 
-  
-} 
+  &::after {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background: $tertiary-color;
+    position: absolute;
+    left: calc(10% - 10%);
+    bottom: -5px;
+  }
+}
 }
