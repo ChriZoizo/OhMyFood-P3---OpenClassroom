@@ -2,9 +2,19 @@ header {
   height: 57px;
   text-align: center;
   width: 100%;
-
-  & h1 {    
+  position:relative;
+  & h1 { 
+    font-family: shrikhand;   
     font-size: 36px;
     margin: 18px 0 0 0 
   }
+
+
+}
+
+.header-arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: black;
 }
