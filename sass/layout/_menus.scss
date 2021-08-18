@@ -19,9 +19,6 @@
   }
 }
 
-
-
-
 .hero-image {
   height: 250px;
   width: 100%;
@@ -32,10 +29,8 @@
 }
 
 .menu {
-
-  
   @media screen and (min-width: 1024px) {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -57,39 +52,38 @@
     display: flex;
     justify-content: space-between;
 
-    &__price{
+    &__price {
       font-weight: bolder;
     }
   }
 }
 
 .submenu {
-
   @media screen and (min-width: 1024px) {
-width: 30%;
+    width: 30%;
   }
 
-&__title {
-  display: inline-block;
-  position: relative;
+  &__title {
+    display: inline-block;
+    position: relative;
 
-  &::after {
-    content: "";
-    height: 2px;
-    width: 40px;
-    background: $tertiary-color;
-    position: absolute;
-    left: calc(10% - 10%);
-    bottom: -5px;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 40px;
+      background: $tertiary-color;
+      position: absolute;
+      left: calc(10% - 10%);
+      bottom: -5px;
+    }
   }
-}
 }
 
 .order {
-text-align: center;
-margin: 35px;
-& button {
-  width: 150px;
-  font-family: roboto;
-}
+  text-align: center;
+  margin: 35px;
+  & button {
+    width: 150px;
+    font-family: roboto;
+  }
 }
