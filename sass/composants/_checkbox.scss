@@ -1,0 +1,22 @@
+.checkbox-favorite {
+
+  & .default-checkbox {
+    display:none
+  }
+  & .checked {
+    display: none;
+  }
+
+  & :checked~.checked {
+    display:inline-block
+  }
+  & :checked~.unchecked {
+    display:none
+  }
+
+
+
+
+
+}
+
