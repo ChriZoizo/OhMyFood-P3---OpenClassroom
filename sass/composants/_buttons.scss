@@ -1,14 +1,35 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .btn {
-  background: #FF79DA;
- &--gradiant{
-  background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
-  background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
-  background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
-  background-image: -o-linear-gradient(top, #FF79DA, #9356DC);
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  color: #ffffff;
+  background: #ff79da;
+  &--gradiant {
+    background-image: -webkit-linear-gradient(top, #ff79da, #9356dc);
+    background-image: -moz-linear-gradient(top, #ff79da, #9356dc);
+    background-image: -ms-linear-gradient(top, #ff79da, #9356dc);
+    background-image: -o-linear-gradient(top, #ff79da, #9356dc);
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+    color: #ffffff;
+
+    &:hover {
+      transition: 1000ms !important;
+      opacity: 80% !important;
+
+      box-shadow: 0 6px 27px -10px #000;
+    }
+
+    @media screen and(min-width: 1024px) {
+      opacity: 0;
+      animation: fadein 1s 600ms forwards;
+    }
   }
+
   border-radius: 30px;
   padding: 15px 20px 15px 20px;
   margin-bottom: 20px;
@@ -16,4 +37,7 @@
   border: none;
   font-weight: bolder;
   width: fit-content;
+
+  opacity: 0;
+  animation: fadein 1s 1500ms forwards;
 }
