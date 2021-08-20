@@ -41,3 +41,60 @@
   opacity: 0;
   animation: fadein 1s 1500ms forwards;
 }
+
+.menu {
+  &__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    position: relative;
+    background-color: black;
+    &--menu {
+      font-size:0.7rem;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        $primary-color 0%,
+        $secondary-color 100%
+      );
+    };
+
+  }
+
+  &__like {
+    transition-duration: 0.25s;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
+
+  &__btn:hover {
+    .menu__like {
+      &--noBg {
+        opacity: 0;
+      }
+    }
+  }
+}
