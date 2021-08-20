@@ -9,27 +9,6 @@
 
 .btn {
   background: #ff79da;
-  &--gradiant {
-    background-image: -webkit-linear-gradient(top, #ff79da, #9356dc);
-    background-image: -moz-linear-gradient(top, #ff79da, #9356dc);
-    background-image: -ms-linear-gradient(top, #ff79da, #9356dc);
-    background-image: -o-linear-gradient(top, #ff79da, #9356dc);
-    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
-    color: #ffffff;
-
-    &:hover {
-      transition: 1000ms !important;
-      opacity: 80% !important;
-
-      box-shadow: 0 6px 27px -10px #000;
-    }
-
-    @media screen and(min-width: 1024px) {
-      opacity: 0;
-      animation: fadein 1s 600ms forwards;
-    }
-  }
-
   border-radius: 30px;
   padding: 15px 20px 15px 20px;
   margin-bottom: 20px;
@@ -38,9 +17,31 @@
   font-weight: bolder;
   width: fit-content;
 
+  &--gradiant {
+    background-image: -moz-linear-gradient(top, #ff79da, #9356dc);
+    background-image: -ms-linear-gradient(top, #ff79da, #9356dc);
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+    color: #ffffff;
+
+    &:hover {
+      transition: 1000ms !important;
+      opacity: 80% !important;
+      box-shadow: 0 6px 27px -10px #000;
+    }
+
+    &-animated{
+      
   opacity: 0;
   animation: fadein 1s 1500ms forwards;
-}
+      @media screen and(min-width: 1024px) {
+        opacity: 0;
+        animation: fadein 1s 600ms forwards;
+      }
+  }}
+
+
+  }
+
 
 .menu {
   &__btn {
@@ -52,7 +53,7 @@
     position: relative;
     background-color: black;
     &--menu {
-      font-size:0.7rem;
+      font-size: 0.7rem;
     }
     &:hover::before {
       opacity: 1;
@@ -72,8 +73,7 @@
         $primary-color 0%,
         $secondary-color 100%
       );
-    };
-
+    }
   }
 
   &__like {
