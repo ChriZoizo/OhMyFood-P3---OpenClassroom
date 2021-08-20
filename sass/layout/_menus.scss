@@ -22,13 +22,11 @@
 .hero-image {
   height: 250px;
   width: 100%;
-overflow: hidden;
+  overflow: hidden;
   & img {
     object-fit: cover;
-    animation: zoomOut 1500ms forwards
+    animation: zoomOut 1500ms forwards;
   }
-
-
 }
 
 .menu {
@@ -100,85 +98,100 @@ overflow: hidden;
   }
 }
 
-  /* ANIMATION */
+/* ANIMATION */
 
-  /* Hero */
+/* Hero */
 
-  @keyframes zoomOut {
-from {
-  transform: scale(2);
-}
-to {
-  transform: (1);
-}
+@keyframes zoomOut {
+  from {
+    transform: scale(2);
   }
+  to {
+    transform: (1);
+  }
+}
 
-  /* fadeIn */
+/* fadeIn */
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
- to {
-   opacity: 1
- } 
+  to {
+    opacity: 1;
+  }
 }
 
-.delayed1, .delayed2, .delayed3, .delayed4, .delayed5, .delayed6, .delayed7, .delayed8, .delayed9 {
-  opacity: 0
+.delayed1,
+.delayed2,
+.delayed3,
+.delayed4,
+.delayed5,
+.delayed6,
+.delayed7,
+.delayed8,
+.delayed9 {
+  opacity: 0;
 }
 @media screen and(max-width: 1024px) {
-  .delayed1{
-    animation: fadeIn 1s 150ms forwards
+  .delayed1 {
+    animation: fadeIn 1s 150ms forwards;
   }
   .delayed2 {
-    animation: fadeIn 1s 300ms forwards
+    animation: fadeIn 1s 300ms forwards;
   }
   .delayed3 {
-    animation: fadeIn 1s 450ms forwards
+    animation: fadeIn 1s 450ms forwards;
   }
   .delayed4 {
-    animation: fadeIn 1s 600ms forwards
+    animation: fadeIn 1s 600ms forwards;
   }
   .delayed5 {
-    animation: fadeIn 1s 750ms forwards
+    animation: fadeIn 1s 750ms forwards;
   }
   .delayed6 {
-    animation: fadeIn 1s 900ms forwards
+    animation: fadeIn 1s 900ms forwards;
   }
-  .delayed7{
-    animation: fadeIn 1s 1050ms forwards
+  .delayed7 {
+    animation: fadeIn 1s 1050ms forwards;
   }
   .delayed8 {
-    animation: fadeIn 1s 1200ms forwards
+    animation: fadeIn 1s 1200ms forwards;
   }
   .delayed9 {
-    animation: fadeIn 1s 1350ms forwards
+    animation: fadeIn 1s 1350ms forwards;
   }
-
 }
 
 @media screen and(min-width: 1025px) {
-
-  .delayedA, .delayedB, .delayedC {
-    opacity: 0
-  } 
+  .delayedA,
+  .delayedB,
+  .delayedC {
+    opacity: 0;
+  }
 
   .delayedD {
-    animation: fadeIn 1s forwards
+    animation: fadeIn 1s forwards;
   }
 
-  .delayedA, .delayed1, .delayed4, .delayed7 {
-    animation: fadeIn 1s 150ms forwards
+  .delayedA,
+  .delayed1,
+  .delayed4,
+  .delayed7 {
+    animation: fadeIn 1s 150ms forwards;
   }
 
-  .delayedB, .delayed2, .delayed5, .delayed8 {
-    animation: fadeIn 1s 300ms forwards
+  .delayedB,
+  .delayed2,
+  .delayed5,
+  .delayed8 {
+    animation: fadeIn 1s 300ms forwards;
   }
 
-  .delayedC, .delayed3, .delayed6, .delayed9 {
-    animation: fadeIn 1s 450ms forwards
+  .delayedC,
+  .delayed3,
+  .delayed6,
+  .delayed9 {
+    animation: fadeIn 1s 450ms forwards;
   }
-
-} 
-
+}

@@ -3,21 +3,21 @@
 }
 
 @mixin primary-colour {
-  color: $primary-color
+  color: $primary-color;
 }
 @mixin secondary-colour {
-  color: $secondary-color
+  color: $secondary-color;
 }
 @mixin tertiary-colour {
-  color: $tertiary-color
+  color: $tertiary-color;
 }
 
 @mixin alternative-colour {
- color: $grey-color
+  color: $grey-color;
 }
 
 @mixin grey-light-colour {
-  color: #7e7e7e
+  color: #7e7e7e;
 }
 
 @mixin flexCol-spacearound {

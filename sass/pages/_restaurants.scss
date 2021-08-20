@@ -1,7 +1,5 @@
 .cards {
-
-    @include flexCol-spacebetween;
-
+  @include flexCol-spacebetween;
 
   &__card {
     position: relative;
@@ -18,7 +16,6 @@
       object-fit: cover;
     }
 
-
     &__badge {
       padding: 0.5rem;
       font-size: 0.8rem;
@@ -30,18 +27,16 @@
       position: absolute;
       top: 14px;
       right: 7px;
-
     }
 
     &__footer {
       display: flex;
       justify-content: space-between;
-      padding: 0.7rem
+      padding: 0.7rem;
     }
 
-
     & h3 {
-      margin: 0
+      margin: 0;
     }
 
     & p {
@@ -52,9 +47,7 @@
 
 .like {
   margin: 0.5rem 0.5rem 0 0;
- font-size: smaller;
-    color: white;
-    -webkit-text-stroke:1px rgb(0, 0, 0)
-
+  font-size: smaller;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
-

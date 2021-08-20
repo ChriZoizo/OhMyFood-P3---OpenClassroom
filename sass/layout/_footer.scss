@@ -11,7 +11,6 @@
 
   & li {
     list-style: none;
-
   }
 
   & ul {
@@ -20,9 +19,9 @@
     @include flexCol-spacearound;
     row-gap: 0.8rem;
 
-    @media screen and (min-width: 1024px){
-      flex-direction: row;    
-        }
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
 
   & a {
@@ -31,11 +30,9 @@
     @include font;
   }
 
-  @media screen and (min-width: 1024px){
-   text-align: center;;    
-      }
-
-
+  @media screen and (min-width: 1024px) {
+    text-align: center;
+  }
 }
 
 footer + .container {

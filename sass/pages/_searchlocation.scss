@@ -17,6 +17,6 @@
 
   & p {
     margin: 0;
-  @include alternative-colour
+    @include alternative-colour;
   }
 }
