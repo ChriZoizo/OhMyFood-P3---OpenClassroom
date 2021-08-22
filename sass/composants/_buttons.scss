@@ -71,23 +71,27 @@
       background: linear-gradient(
         0deg,
         $primary-color 0%,
-        $secondary-color 100%
+        $secondary-color 100%,
+ 
       );
     }
   }
 
   &__like {
-    transition-duration: 0.25s;
-    background-color: #f6f6f6;
+/*     display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition-duration: 0.5s;
+    background-color: $grey-light-color;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     mix-blend-mode: lighten;
+
+
   }
 
   &__btn:hover {
@@ -97,4 +101,8 @@
       }
     }
   }
+}
+
+.bgWhite {
+  background-color: #fff !important;
 }

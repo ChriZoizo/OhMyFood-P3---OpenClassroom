@@ -43,6 +43,20 @@
       margin: 0.2rem 0;
     }
   }
+
+}
+
+@media screen and (min-width: 1024px) {
+.cards {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__card{
+    width : 40%
+  }
+}  
+
 }
 
 /* .like {
