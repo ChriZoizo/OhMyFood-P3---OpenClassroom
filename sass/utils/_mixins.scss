@@ -1,7 +1,7 @@
 @mixin font {
   font-family: roboto;
 }
-
+ /* COLOR */
 @mixin primary-colour {
   color: $primary-color;
 }
@@ -15,11 +15,36 @@
 @mixin alternative-colour {
   color: $grey-color;
 }
-
 @mixin grey-light-colour {
-  color: #7e7e7e;
+  color: $grey-light-color;
+}
+@mixin grey-colour {
+  color: $grey-color;
+}
+@mixin grey-dark-colour {
+  color: $grey-dark-color;
 }
 
+/* BACKGROUND COLOR */
+@mixin bg-primary-colour {
+  background-color: $primary-color;
+}
+@mixin bg-secondary-colour {
+  background-color: $secondary-color;
+}
+@mixin bg-tertiary-colour {
+  background-color: $tertiary-color;
+}
+@mixin bg-alternative-colour {
+  background-color: $grey-color;
+}
+@mixin bg-grey-light-colour {
+  background-color: $grey-light-color;
+}
+@mixin bg-grey-dark-colour {
+  background-color: $grey-dark-color;
+}
+/* FLEXBOX */
 @mixin flexCol-spacearound {
   display: flex;
   flex-direction: column;
@@ -30,7 +55,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+/* MISC */
 @mixin rounded {
   border-radius: 40px;
 }

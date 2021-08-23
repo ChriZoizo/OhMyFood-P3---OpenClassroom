@@ -30,7 +30,7 @@
 }
 
 .menu {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +42,6 @@
   }
 }
 
-
 .submenu-item {
   position: relative;
   display: flex;
@@ -51,34 +50,43 @@
   background-color: white;
   border-radius: 10px;
   margin-bottom: 10px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 15px;
+  padding: 7px 0 7px 15px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   width: auto;
 
   &__header {
+     /* animation "checker" */
+    transition: width 500ms;
+    /* END */
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 80vw;
+    width: 80%;
+    & h4,
+    p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 
   &__footer {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     position: absolute;
     right: -4rem;
+    /* animation "checker" */
     transform: translateX(0);
     transition: transform 0.5s ease-out;
     i {
       transform: rotate(180deg);
       transition: transform 0.7s ease-out;
     }
+    /* END */
     &__price {
       font-weight: bolder;
-      margin: 1.5rem 1rem 0 0;
+      margin: 2.2rem 1rem 0 0;
     }
   }
 
@@ -88,32 +96,35 @@
     align-items: center;
     width: 4rem;
     height: 4.5rem;
-    background-color: $tertiary-color;
+    @include bg-tertiary-colour;
 
     & i {
       color: white;
       font-size: 1.2rem;
     }
   }
-
+ /* animation "checker" */
   &:hover,
   &:focus {
     cursor: pointer;
     .submenu-item {
-      width: 62vw;
+      &__header {
+        width: 70%;
+      }
 
       &__footer {
-        transform: translateX(-4em);
+        transform: translateX(-4rem);
         i {
           transform: rotate(720deg);
         }
       }
     }
   }
+  /* END */
 }
 
 .submenu {
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
     width: 30%;
   }
 
@@ -125,7 +136,7 @@
       content: "";
       height: 2px;
       width: 40px;
-      background: $tertiary-color;
+      @include bg-tertiary-colour;
       position: absolute;
       left: 0;
       bottom: -5px;
@@ -138,7 +149,7 @@
   margin: 35px;
   & button {
     width: 150px;
-    font-family: roboto;
+    font-family: $font-secondary;
   }
 }
 
@@ -151,21 +162,20 @@
     transform: scale(2);
   }
   to {
-    transform: (1);
+    transform: scale(1);
   }
 }
-
-/* check */
 
 /* fadeIn */
 
 @keyframes fadeIn {
   from {
-  position: relative;
-  bottom: -3px;
+    position: relative;
+    bottom: -3px;
     opacity: 0;
   }
-  to {  position: relative;
+  to {
+    position: relative;
     bottom: 0;
     opacity: 1;
   }
@@ -182,7 +192,7 @@
 .delayed9 {
   opacity: 0;
 }
-@media screen and(max-width: 1024px) {
+@media screen and(max-width:  map-get($map: $breackpoint, $key: tablettexl )) {
   .delayed1 {
     animation: fadeIn 1s 150ms forwards;
   }

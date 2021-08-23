@@ -6,7 +6,7 @@
   @include flexCol-spacearound;
   align-items: center;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
     flex-direction: row;
     column-gap: 2rem;
   }
@@ -34,7 +34,7 @@
 }
 
 .step-icon {
-  @include grey-light-colour;
+  @include grey-colour;
   position: relative;
   right: 25px;
 

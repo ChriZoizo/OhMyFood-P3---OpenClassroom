@@ -1,13 +1,11 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$tertiary-darker: darken($tertiary-color,30%);
 
 $grey-dark-color: #353535;
 $grey-light-color: #f6f6f6;
 $grey-color: #7e7e7e;
-
-$tertiary-darker: darken($tertiary-color,30%);
-
 
 $font-primary : shrikhand;
 $font-secondary: roboto;

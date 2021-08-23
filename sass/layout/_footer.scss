@@ -1,11 +1,11 @@
 .footer {
-  background-color: $grey-dark-color;
+  @include bg-grey-dark-colour;
   color: white;
   position: relative;
   bottom: 30px;
 
   &__logo {
-    font-family: shrikhand;
+    font-family: $font-primary;
     font-size: 1.5rem;
   }
 
@@ -19,7 +19,7 @@
     @include flexCol-spacearound;
     row-gap: 0.8rem;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
       flex-direction: row;
     }
   }
@@ -30,7 +30,7 @@
     @include font;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
     text-align: center;
   }
 }

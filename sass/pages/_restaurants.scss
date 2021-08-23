@@ -20,7 +20,7 @@
       padding: 0.5rem;
       font-size: 0.8rem;
       font-weight: bolder;
-      font-family: roboto !important;
+      font-family: $font-secondary !important;
       color: $tertiary-darker;
       background-color: $tertiary-color;
       border-radius: 2px;
@@ -46,7 +46,7 @@
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
 .cards {
   display:flex;
   flex-direction: row;
@@ -58,10 +58,3 @@
 }  
 
 }
-
-/* .like {
-  margin: 0.5rem 0.5rem 0 0;
-  font-size: smaller;
-  color: white;
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
-} */
