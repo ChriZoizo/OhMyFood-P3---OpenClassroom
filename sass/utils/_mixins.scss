@@ -44,6 +44,16 @@
 @mixin bg-grey-dark-colour {
   background-color: $grey-dark-color;
 }
+
+/* GRADIENTG BACKGROUND COLOR */
+@mixin bg-gradient {
+  background: linear-gradient(
+    0deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+}
+
 /* FLEXBOX */
 @mixin flexCol-spacearound {
   display: flex;
@@ -58,19 +68,4 @@
 /* MISC */
 @mixin rounded {
   border-radius: 40px;
-}
-
-
-@mixin like-btn {
-  transition-duration: 0.5s;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  mix-blend-mode: lighten;
-
-
 }

@@ -18,9 +18,7 @@
   width: fit-content;
 
   &--gradiant {
-    background-image: -moz-linear-gradient(top, #ff79da, #9356dc);
-    background-image: -ms-linear-gradient(top, #ff79da, #9356dc);
-    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+@include bg-gradient;
     color: #ffffff;
 
     &:hover {
@@ -29,19 +27,16 @@
       box-shadow: 0 6px 27px -10px #000;
     }
 
-    &-animated{
-      
-  opacity: 0;
-  animation: fadein 1s 1500ms forwards;
+    &-animated {
+      opacity: 0;
+      animation: fadein 1s 1500ms forwards;
       @media screen and(min-width: map-get($map: $breackpoint, $key: tablettexl )) {
         opacity: 0;
         animation: fadein 1s 600ms forwards;
       }
-  }}
-
-
+    }
   }
-
+}
 
 .menu {
   &__btn {
@@ -68,12 +63,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(
-        0deg,
-        $primary-color 0%,
-        $secondary-color 100%,
- 
-      );
+      @include bg-gradient;
     }
   }
 
@@ -85,10 +75,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-
     mix-blend-mode: lighten;
-
-
   }
 
   &__btn:hover {
