@@ -2,20 +2,15 @@
   @include bg-grey-dark-colour;
   color: white;
 
-
   &__logo {
     font-family: $font-primary;
     font-size: 1.5rem;
   }
 
-  & li {
-    list-style: none;
-  }
-
   & ul {
+    @include flexCol-spacearound;
     padding: 0;
     list-style-type: none;
-    @include flexCol-spacearound;
     row-gap: 0.8rem;
 
     @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
@@ -25,8 +20,7 @@
 
   & a {
     color: white;
-    text-decoration: none;
-    @include font;
+    font-family: $font-secondary;
   }
 
   @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {

@@ -1,16 +1,16 @@
+/* KEYFRAMES */
+/* Spinner */
 @keyframes spin1 {
   100% {
-
     transform: rotate(900deg);
   }
 }
 @keyframes spin2 {
   100% {
-
     transform: rotate(1260deg);
   }
 }
-
+/* Load Ended */
 @keyframes loaded {
   95% {
     opacity: 1;
@@ -19,7 +19,7 @@
     opacity: 0;
   }
 }
-
+/* Loader Z-index changer */
 @keyframes goOut {
   100% {
     z-index: -100;
@@ -37,7 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: loaded 3.5s cubic-bezier(0.25, 0.44, 0.42, 1) forwards, goOut 1s 3500ms linear forwards;
+  animation: loaded 3.5s cubic-bezier(0.25, 0.44, 0.42, 1) forwards,
+             goOut 1s 3500ms linear forwards;
   &__container {
     width: 60%;
     display: flex;

@@ -43,18 +43,16 @@
       margin: 0.2rem 0;
     }
   }
-
 }
 
 @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
-.cards {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  &__card{
-    width : 40%
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__card {
+      width: 40%;
+    }
   }
-}  
-
 }

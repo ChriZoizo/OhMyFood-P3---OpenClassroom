@@ -1,7 +1,5 @@
 .main-menu {
   background-color: $grey-light-color;
-/*   position: relative;
-  bottom: 30px; */
   border-radius: 30px 30px 0 0;
 
   & p {
@@ -9,7 +7,7 @@
   }
 
   & h1 {
-    font-family: shrikhand;
+    font-family: $font-primary;
     margin: 0;
   }
 
@@ -19,6 +17,7 @@
   }
 }
 
+/* Her Image */
 .hero-image {
   height: 250px;
   width: 100%;
@@ -32,6 +31,7 @@
   }
 }
 
+/* Menu */
 .menu {
   @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
     display: flex;
@@ -65,7 +65,7 @@
     /* END */
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 80%;
+    width: calc(100% - 3rem);
     & h4,
     p {
       text-overflow: ellipsis;
@@ -112,7 +112,7 @@
     cursor: pointer;
     .submenu-item {
       &__header {
-        width: 70%;
+        width: calc(100% - 7rem);
       }
 
       &__footer {
@@ -126,6 +126,7 @@
   /* END */
 }
 
+/* SubMenu like "starter (entrée)", "main course (plat)" and dessert */
 .submenu {
   @media screen and (min-width: map-get($map: $breackpoint, $key: tablettexl )) {
     width: 30%;
@@ -146,7 +147,7 @@
     }
   }
 }
-
+/* Order Button */
 .order {
   text-align: center;
   margin: 35px;
@@ -183,6 +184,8 @@
     opacity: 1;
   }
 }
+
+/* CALL and DELAY FadeIn Animation */
 
 .delayed1,
 .delayed2,

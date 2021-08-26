@@ -6,7 +6,7 @@
     opacity: 1;
   }
 }
-
+/* BASIC BUTTON */
 .btn {
   background: #ff79da;
   border-radius: 30px;
@@ -16,9 +16,9 @@
   border: none;
   font-weight: bolder;
   width: fit-content;
-
+  /* Gradiant button */
   &--gradiant {
-@include bg-gradient;
+    @include bg-gradient;
     color: #ffffff;
 
     &:hover {
@@ -26,7 +26,7 @@
       opacity: 80% !important;
       box-shadow: 0 6px 27px -10px #000;
     }
-
+    /* Add FadeIn Animation */
     &-animated {
       opacity: 0;
       animation: fadein 1s 1500ms forwards;
@@ -38,6 +38,7 @@
   }
 }
 
+/* Little Heart Icon for "Like" Menu and restaurants */
 .menu {
   &__btn {
     height: 2rem;
