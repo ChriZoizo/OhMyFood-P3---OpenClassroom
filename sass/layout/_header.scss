@@ -1,12 +1,14 @@
 header {
-  height: 57px;
+  height: 65px;
   text-align: center;
   width: 100%;
-  position: relative;
+  position: fixed;
+  background-color: #fff;
+  z-index: 7;
   & h1 {
     font-family: $font-primary;
     font-size: 36px;
-    margin: 18px 0 0 0;
+    margin: 8px 0 0 0;
   }
 }
 

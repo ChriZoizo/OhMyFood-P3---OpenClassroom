@@ -1,8 +1,7 @@
 .footer {
   @include bg-grey-dark-colour;
   color: white;
-  position: relative;
-  bottom: 30px;
+
 
   &__logo {
     font-family: $font-primary;
